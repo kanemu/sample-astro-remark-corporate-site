@@ -1,5 +1,7 @@
 # Astro + remark-dl-list / remark-pipe-table サンプルサイト
 
+![料金表（remark-pipe-table の例）](./pricing_page.png)
+
 Astro 上で remark-dl-list / remark-pipe-table を組み合わせて利用する、コーポレートサイト構成のサンプルプロジェクトです。
 
 ## このサンプルで確認できること
@@ -93,7 +95,7 @@ Astro のプレビューやビルド結果とほぼ同じ表示を、VS Code 上
 ## 記法サンプル
 
 このサンプルで使われている実際の markdown ファイルは、
-`./src/content/pages` 以下にあります。
+[`./src/content/pages`](./src/content/pages) 以下にあります。
 
 ### 説明リスト（dl-list）
 
@@ -129,3 +131,7 @@ Astro のプレビューやビルド結果とほぼ同じ表示を、VS Code 上
 
 * [unified-dl-list](https://github.com/kanemu/unified-dl-list)
 * [unified-pipe-table](https://github.com/kanemu/unified-pipe-table)
+
+## ライセンス
+
+MIT
