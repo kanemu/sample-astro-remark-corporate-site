@@ -1,0 +1,201 @@
+:root {
+  --text: #111;
+  --muted: #666;
+  --bg: #fff;
+  --border: #ddd;
+  --border-strong: #bbb;
+  --card: #fafafa;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--bg);
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    sans-serif;
+  line-height: 1.6;
+}
+a {
+  color: inherit;
+}
+header,
+main,
+footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+header {
+  padding-top: 28px;
+  padding-bottom: 10px;
+}
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+.brand h1 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+}
+.brand small {
+  color: var(--muted);
+}
+nav {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+}
+nav a {
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+nav a:hover {
+  border-color: var(--border);
+  background: var(--card);
+}
+
+.hero {
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, #fff, #fbfbfb);
+  border-radius: 16px;
+  padding: 22px;
+}
+.hero h2 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+}
+.hero p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.grid {
+  margin-top: 18px;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.card {
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 16px;
+  padding: 16px;
+}
+.card h3 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+}
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* Markdown styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0 18px;
+}
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 10px clamp(10px, 5%, 40px);
+  vertical-align: center;
+}
+thead th {
+  border-bottom: 1px solid var(--border-strong);
+  background: #f6f6f6;
+}
+
+.cell-left {
+  text-align: left;
+}
+.cell-right {
+  text-align: right;
+}
+.cell-center {
+  text-align: center;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin: 12px 0 18px;
+}
+
+dl dt {
+  grid-column: 1; /* 常に1列目から開始 */
+  font-weight: bold;
+  margin-top: 12px;
+
+  /* フレックスボックスで制御 */
+  display: flex;
+  align-items: baseline; /* テキストのベースラインで揃える */
+  gap: 0.5em;            /* テキストと…の間の隙間を指定 */
+}
+
+dl dt::after {
+  content: "…";         /* 擬似的に三点リーダを追加 */
+  font-weight: normal;   /* リーダだけ細くしたい場合は調整 */
+  margin-left: auto;     /* 右側に寄せる */
+}
+
+dl dd {
+  grid-column: 2; /* 常に2列目に配置 */
+  margin-top: 12px;
+  color: var(--muted);
+  margin-inline-start: 0.5em; /* ブラウザのデフォルト余白をリセット */
+}
+
+/* dd が連続する場合、2つ目以降の margin-top を調整する */
+dl dd + dd {
+  margin-top: 4px; 
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
+code {
+  font-family:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    monospace;
+  font-size: 0.95em;
+}
+footer {
+  margin-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+.btnrow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 999px;
+}
+.btn:hover {
+  background: var(--card);
+}

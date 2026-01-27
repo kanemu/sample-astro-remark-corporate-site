@@ -1,0 +1,35 @@
+{
+  "name": "sample-astro-remark-corporate-site",
+  "description": "Astro と remark-dl-list / remark-pipe-table を使ったコーポレートサイト構成のサンプル",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.16.15",
+    "hast-util-dl-list": "^0.1.3",
+    "hast-util-pipe-table": "^0.1.1",
+    "remark-dl-list": "^0.1.3",
+    "remark-emoji": "^5.0.2",
+    "remark-pipe-table": "^0.1.1",
+    "remark-gfm": "^4.0.1"
+  },
+  "keywords": [
+    "astro",
+    "remark",
+    "markdown",
+    "markdown拡張",
+    "dl-list",
+    "pipe-table",
+    "コーポレートサイト",
+    "企業サイト",
+    "静的サイト",
+    "サンプル",
+    "example"
+  ]
+}

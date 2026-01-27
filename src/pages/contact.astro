@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+<BaseLayout title="Contact" description="お問い合わせ">
+  <h2>Contact</h2>
+
+  <div class="card">
+    <p style="margin-top:0;color:var(--muted)">
+      これはデモ用のフォームです（送信処理はありません）。
+    </p>
+
+    <form method="post" action="#" style="display:grid;gap:12px">
+      <label>
+        お名前<br />
+        <input name="name" required style="width:100%;padding:10px;border:1px solid var(--border);border-radius:10px" />
+      </label>
+
+      <label>
+        メール<br />
+        <input type="email" name="email" required style="width:100%;padding:10px;border:1px solid var(--border);border-radius:10px" />
+      </label>
+
+      <label>
+        お問い合わせ内容<br />
+        <textarea name="message" rows="6" required style="width:100%;padding:10px;border:1px solid var(--border);border-radius:10px"></textarea>
+      </label>
+
+      <button type="submit" style="justify-self:start;padding:10px 14px;border-radius:999px;border:1px solid var(--border);background:#fff">
+        送信
+      </button>
+    </form>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>所在地</h3>
+      <p>東京都</p>
+    </div>
+    <div class="card">
+      <h3>営業時間</h3>
+      <p>平日 10:00–18:00</p>
+    </div>
+    <div class="card">
+      <h3>採用</h3>
+      <p>現在は募集していません</p>
+    </div>
+  </div>
+</BaseLayout>

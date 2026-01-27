@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+<BaseLayout title="Home">
+  <section class="hero">
+    <h2>“読むための Markdown” を、そのままサイトに。</h2>
+    <p>
+      このサンプルは <code>remark-dl-list</code>（説明リスト）と
+      <code>remark-pipe-table</code>（縦展開できるテーブル）を Astro に組み込んだ
+      コーポレートサイトの最小例です。
+    </p>
+    <div class="btnrow">
+      <a class="btn" href="/services">サービスを見る</a>
+      <a class="btn" href="/pricing">料金を見る</a>
+      <a class="btn" href="/company">会社情報</a>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h3>説明リスト（DL）</h3>
+      <p>FAQ や会社概要を、読みやすい “用語→説明” 形式で書けます。</p>
+    </div>
+    <div class="card">
+      <h3>Pipe Table</h3>
+      <p>セルを縦に展開できるので、長文・箇条書きでも崩れません。</p>
+    </div>
+    <div class="card">
+      <h3>Astro</h3>
+      <p>静的サイトとして軽量。Markdown コンテンツをそのままページにできます。</p>
+    </div>
+  </section>
+</BaseLayout>
