@@ -199,3 +199,41 @@ footer {
 .btn:hover {
   background: var(--card);
 }
+
+.brand {
+  display: flex;
+  align-items: center; /* 左右ブロックを縦中央 */
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand-title {
+  display: flex;
+  align-items: baseline; /* h1 と small を中央揃え */
+  gap: 8px;
+}
+
+.brand-title h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.brand-title small {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.github-link {
+  font-size: 12px;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.github-link:hover {
+  color: var(--text);
+  background: var(--card);
+}
